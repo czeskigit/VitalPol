@@ -49,7 +49,6 @@ header {
     height: 100vh;
     position: relative;
     display: flex;
-    align-items: center;
 }
 
 header #header-mask {
@@ -98,7 +97,8 @@ header #title-mask {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    transform: translateY(230%);
+    bottom: 15%;
+    left: 0;
     color: #fff;
     text-shadow: 2px 2px 10px #000;
     width: 80%;
@@ -194,7 +194,7 @@ section .bold {
 }
 
 section h3 {
-    width: 80%;
+    width: 100%;
     background-color: #003f75;
     padding: 20px;
     margin-bottom: 30px;
@@ -203,58 +203,8 @@ section h3 {
 }
 
 #eco-fish-section {
-    top: -160px;
+    top: -120px;
     margin-bottom: -150px;
-}
-
-#eco-fish-section .certificates-box {
-    width: 300px;
-    height: 210px;
-    border: 2px solid #003f75;
-    margin-top: 50px;
-    transition: all .3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#eco-fish-section .certificates-box i {
-    color: #95A5A6;
-    font-size: 50px;
-    transition: all .3s;
-}
-
-#eco-fish-section .certificates-box:hover {
-    background-color: #003f75;
-    cursor: pointer;
-}
-
-#eco-fish-section .certificates-box:hover i {
-    color: #fff;
-}
-
-#eco-fish-section .col-sm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#eco-fish-section #certificate-fixed-container {
-    position: fixed;
-    z-index: 4;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#eco-fish-section #certificate-fixed-container embed {
-    width: 80%;
-    height: 80%;
 }
 
 #offer-section {
@@ -270,7 +220,7 @@ section h3 {
 }
 
 #offer-section .row .col-sm h4 {
-    height: 60px;
+    min-height: 60px;
     font-weight: bold;
 }
 
@@ -282,19 +232,57 @@ section h3 {
 }
 
 #offer-section .fish-photo {
-    width: calc(100% - 100px);
-    height: 200px;
-    border: 2px solid #003f75;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: calc(100% - 50px);
+    height: 250px;
+    overflow: hidden;
+}
+
+#offer-section .fish-photo-box {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
     transition: all .3s;
 }
 
-#offer-section .fish-photo i {
-    font-size: 100px;
-    color: #95A5A6;
+#offer-section .fish-photo-box .fish-mask {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 63, 117, 0);
     transition: all .3s;
+}
+
+#offer-section .fish-photo-box .fish-mask i {
+    color: transparent;
+    font-size: 50px;
+    transition: all .3s;
+}
+
+#offer-section .fish-photo .fish-photo-box:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#offer-section .fish-photo .fish-photo-box:hover .fish-mask {
+    background-color: rgba(0, 63, 117, 0.5);
+}
+
+#offer-section .fish-photo .fish-photo-box:hover .fish-mask i {
+    color: #fff;
+}
+
+#offer-section #fish-1 {
+    background-image: url("../resources/fish-1.jpg");
+}
+
+#offer-section #fish-2 {
+    background-image: url("../resources/fish-2.jpg");
+}
+
+#offer-section #fish-3 {
+    background-image: url("../resources/fish-3.jpg");
 }
 
 #offer-section #fishes-photos {
@@ -302,18 +290,46 @@ section h3 {
     margin-top: -100px;
 }
 
-#offer-section .fish-photo:hover {
-    background-color: #003f75;
-    cursor: pointer;
+#fish-photo-fixed {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#offer-section .fish-photo:hover i {
-    transform: rotate(360deg);
-    color: #fff;
+#fish-photo-fixed img {
+    height: 80vh;
 }
 
 #gallery-section {
     height: 100vh;
+}
+
+#gallery-section .col-sm {
+    display: flex;
+    justify-content: center;
+}
+
+#gallery-section #gallery-slide {
+    width: 70%;
+}
+
+#gallery-section .carousel-inner {
+    height: 70vh;
+}
+
+#gallery-section .carousel-inner div {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 #contact-section .col-lg {
@@ -330,8 +346,86 @@ section h3 {
     font-weight: bold;
 }
 
-#projects-section {
+#projects-section .certificates-box {
+    width: 300px;
+    height: 210px;
+    margin-top: 50px;
+    transition: all .3s;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#projects-section .certificates-box .cert-mask {
+    height: 100%;
+    width: 100%;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects-section .certificates-box .cert-mask i {
+    color: #95A5A6;
+    font-size: 50px;
+    transition: all .3s;
+}
+
+#projects-section #cert1 {
+    background-image: url("../resources/projects/tablica_di_bond_wymiar_A3_Iwona_Wieczorek.jpg");
+}
+
+#projects-section #cert2 {
+    background-image: url("../resources/projects/tablica_di_bond_wymiar_A3_Wieczorek_Iwona_wodsrod.jpg");
+}
+
+#projects-section #cert3 {
+    background-image: url("../resources/projects/tablica_dibond_wymiar_a3_Modernizacja_przetwornia.jpg");
+}
+
+#projects-section #cert4 {
+    background-image: url("../resources/projects/tablica_dibond_wymiar_a3_Modernizacja_wedkarskie.jpg");
+}
+
+#projects-section #cert5 {
+    background-image: url("../resources/projects/tablica_dibond_wymiar_a3_Modernizacja_zawolcze.jpg");
+}
+
+#projects-section .certificates-box:hover {
+    cursor: pointer;
+}
+
+#projects-section .certificates-box:hover .cert-mask {
+    background-color: rgba(0, 63, 117, 0.5);
+}
+
+#projects-section .certificates-box:hover .cert-mask i {
+    color: #fff;
+    font-size: 100px;
+}
+
+#projects-section .col-sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#certificate-fixed-container {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
     height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#certificate-fixed-container embed {
+    width: 80%;
+    height: 80%;
 }
 
 footer {

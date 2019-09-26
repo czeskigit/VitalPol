@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://fonts.googleapis.com/css?family=Belleza|Nunito+Sans:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <link rel="icon" href="">
+    <link rel="icon" href="resources/favicon.png">
 
     <title>Stawy Zawólcze - Ryby z Serca Natury</title>
 </head>
@@ -48,10 +48,10 @@
                     <a class="nav-link underline" href="#gallery-section">Galeria</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link underline" href="#contact-section">Kontakt</a>
+                    <a class="nav-link underline" href="#projects-section">Projekty EU</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link underline" href="#projects-section">Projekty EU</a>
+                    <a class="nav-link underline" href="#contact-section">Kontakt</a>
                 </li>
             </ul>
         </div>
@@ -62,7 +62,7 @@
     <header>
         <div id="header-mask"></div>
         <video autoplay muted loop id="HeroVideo">
-            <source src="resources/HeroVeryLow.mp4" type="video/mp4">
+            <source src="resources/normalClip.mp4" type="video/mp4">
         </video>
         <div id="links">
             <div>
@@ -70,8 +70,8 @@
                 <a href="#eco-fish-section">Eko Ryby</a>
                 <a href="#offer-section">Oferta</a>
                 <a href="#gallery-section">Galeria</a>
-                <a href="#contact-section">Kontakt</a>
                 <a href="#projects-section">Projekty EU</a>
+                <a href="#contact-section">Kontakt</a>
             </div>
         </div>
         <div id="logo-background">
@@ -84,6 +84,9 @@
             </a>
         </div>
     </header>
+    <div id="certificate-fixed-container" style='display: none'>
+        <embed src="" type="application/pdf">
+    </div>
     <!--    Sections    -->
     <section id="about-section">
         <h3>O Nas</h3>
@@ -118,38 +121,7 @@
                 </div>
             </div>
             <h4>Certyfikaty</h4>
-            <div class="row">
-                <div class="col-sm">
-                    <div class="certificates-box" id="cert1">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="certificates-box" id="cert2">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="certificates-box" id="cert3">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <div class="certificates-box" id="cert4">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="certificates-box" id="cert5">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-            </div>
-            <div id="certificate-fixed-container" style='display: none'>
-                <embed src="" type="application/pdf">
-            </div>
+
         </div>
     </section>
     <section id="offer-section">
@@ -198,34 +170,184 @@
             <div class="row">
                 <div class="col-sm">
                     <div class="fish-photo">
-                        <i class="fas fa-fish"></i>
+                        <div class="fish-photo-box" id="fish-1">
+                            <div class="fish-mask">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm">
                     <div class="fish-photo">
-                        <i class="fas fa-fish"></i>
+                        <div class="fish-photo-box" id="fish-2">
+                            <div class="fish-mask">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm">
                     <div class="fish-photo">
-                        <i class="fas fa-fish"></i>
+                        <div class="fish-photo-box" id="fish-3">
+                            <div class="fish-mask">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <div id="fish-photo-fixed" style='display: none'>
+        <img src="" alt="zdjęcie">
+    </div>
     <section id="gallery-section">
         <h3>Galeria</h3>
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    One of three columns
+                    <div id="gallery-slide" class="carousel slide carousel-fade" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#gallery-slide" data-slide-to="1"></li>
+                            <li data-target="#gallery-slide" data-slide-to="2"></li>
+                            <li data-target="#gallery-slide" data-slide-to="3"></li>
+                            <li data-target="#gallery-slide" data-slide-to="4"></li>
+                            <li data-target="#gallery-slide" data-slide-to="5"></li>
+                            <li data-target="#gallery-slide" data-slide-to="6"></li>
+                            <li data-target="#gallery-slide" data-slide-to="7"></li>
+                            <li data-target="#gallery-slide" data-slide-to="8"></li>
+                            <li data-target="#gallery-slide" data-slide-to="9"></li>
+                            <li data-target="#gallery-slide" data-slide-to="10"></li>
+                            <li data-target="#gallery-slide" data-slide-to="11"></li>
+                            <li data-target="#gallery-slide" data-slide-to="12"></li>
+                            <li data-target="#gallery-slide" data-slide-to="13"></li>
+                            <li data-target="#gallery-slide" data-slide-to="14"></li>
+                            <li data-target="#gallery-slide" data-slide-to="15"></li>
+                            <li data-target="#gallery-slide" data-slide-to="16"></li>
+                            <li data-target="#gallery-slide" data-slide-to="17"></li>
+                            <li data-target="#gallery-slide" data-slide-to="18"></li>
+                            <li data-target="#gallery-slide" data-slide-to="19"></li>
+                            <li data-target="#gallery-slide" data-slide-to="20"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div style="background-image: url('resources/galeria/1.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/2.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/3.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/4.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/5.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/6.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/7.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/8.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/9.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/10.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/11.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/12.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/13.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/14.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/15.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/16.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/17.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/18.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/19.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/20.JPG')" class="d-inline-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="background-image: url('resources/galeria/21.JPG')" class="d-inline-block"></div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#gallery-slide" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#gallery-slide" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects-section">
+        <h3>Projekty EU</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="certificates-box" id="cert1">
+                        <div class="cert-mask">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm">
-                    One of three columns
+                    <div class="certificates-box" id="cert2">
+                        <div class="cert-mask">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm">
-                    One of three columns
+                    <div class="certificates-box" id="cert3">
+                        <div class="cert-mask">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="certificates-box" id="cert4">
+                        <div class="cert-mask">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="certificates-box" id="cert5">
+                        <div class="cert-mask">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -246,22 +368,6 @@
                         <p>23-275 Gościeradów</p>
                         <p>woj. lubelskie</p>
                     </address>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="projects-section">
-        <h3>Projekty EU</h3>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    One of three columns
-                </div>
-                <div class="col-sm">
-                    One of three columns
-                </div>
-                <div class="col-sm">
-                    One of three columns
                 </div>
             </div>
         </div>
