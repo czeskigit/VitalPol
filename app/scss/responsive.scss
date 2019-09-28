@@ -1,0 +1,92 @@
+@media only screen and (max-width: 992px) {
+    
+    header {
+        background-image: url('../resources/galeria/3.JPG');
+        background-position: center;
+        background-size: cover;
+        
+        #header-mask {
+            display: none;
+        }
+        
+        #HeroVideo {
+            display: none;
+        }
+        
+        #links {
+
+            div {
+                width: 100%;
+            }
+        }
+        
+        #logo-background {
+            top: 15vh;
+            right: 50%;
+            transform: translate(50%, -5vh);
+        }
+        
+        #title-mask {
+            
+            h1 {
+                font-size: 40px;
+            }
+            
+            a {
+                font-size: 40px;
+            }
+        }
+    }
+    
+    #gallery-section {
+        
+        #gallery-slide-box {
+            display: inherit;
+        }
+        
+        #desktop-gallery {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    
+    header {
+        
+        #links {
+            display: none;
+        }
+        
+        #logo-background {
+            top: 0;
+            right: 50%;
+            transform: translate(50%, 10%);
+        }
+        
+        #title-mask {
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            bottom: -60vh;
+            width: 100%;
+            margin: 0;
+            height: 50%;
+            
+            h1 {
+                font-size: 30px;
+                text-align: center;
+                width: 100%;
+            }
+            
+            a {
+                
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    
+}

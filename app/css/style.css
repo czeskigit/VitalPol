@@ -93,7 +93,7 @@ header img {
 header #title-mask {
     margin-left: 5%;
     position: relative;
-    z-index: 2;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -286,8 +286,7 @@ section h3 {
 }
 
 #offer-section #fishes-photos {
-    padding-top: 50px;
-    margin-top: -100px;
+    padding-top: 100px;
 }
 
 #fish-photo-fixed {
@@ -307,17 +306,21 @@ section h3 {
     height: 80vh;
 }
 
-#gallery-section {
-    height: 100vh;
-}
-
 #gallery-section .col-sm {
     display: flex;
     justify-content: center;
 }
 
+#gallery-section .col-lg-12:first-child {
+    margin-bottom: 100px;
+}
+
+#gallery-section #gallery-slide-box {
+    display: none;
+}
+
 #gallery-section #gallery-slide {
-    width: 70%;
+    width: 100%;
 }
 
 #gallery-section .carousel-inner {
@@ -330,6 +333,58 @@ section h3 {
     width: 100%;
     background-size: cover;
     background-position: center;
+}
+
+#gallery-section #desktop-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#gallery-section #desktop-gallery .gallery-photos-box {
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#gallery-section #desktop-gallery .gallery-photos-box .gallery-photos {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    transition: all .3s;
+}
+
+#gallery-section #desktop-gallery .gallery-photos-box .gallery-photos .photo-g-mask {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+}
+
+#gallery-section #desktop-gallery .gallery-photos-box .gallery-photos .photo-g-mask i {
+    font-size: 40px;
+    color: transparent;
+    transition: all .3s;
+}
+
+#gallery-section #desktop-gallery .gallery-photos-box .gallery-photos:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#gallery-section #desktop-gallery .gallery-photos-box .gallery-photos:hover .photo-g-mask {
+    background-color: rgba(0, 63, 117, 0.5);
+}
+
+#gallery-section #desktop-gallery .gallery-photos-box .gallery-photos:hover .photo-g-mask i {
+    color: #fff;
 }
 
 #contact-section .col-lg {

@@ -43,6 +43,12 @@ $(document).ready(function(){
         $('#fish-photo-fixed').fadeIn(300);
     });
     
+    $('.gallery-photos').on('click', function(){
+        $('#fish-photo-fixed img').attr('src', 'resources/galeria/' + $(this).attr('id') + '.jpg');
+        $('#fish-photo-fixed').fadeIn(300);
+        
+    });
+    
     //functions
     var displayCertificate = function(){
         $('#certificate-fixed-container').fadeIn(300);

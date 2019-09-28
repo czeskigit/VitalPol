@@ -96,7 +96,7 @@ header {
     #title-mask {
         margin-left: 5%;
         position: relative;
-        z-index: 2;
+        z-index: 1;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -300,8 +300,7 @@ section {
     }
 
     #fishes-photos {
-        padding-top: 50px;
-        margin-top: -100px;
+        padding-top: 100px;
     }    
 }
 
@@ -323,15 +322,23 @@ section {
 }
 
 #gallery-section {
-    height: 100vh;
     
     .col-sm {
         display: flex;
         justify-content: center;
     }
     
+    .col-lg-12:first-child {
+        margin-bottom: 100px;
+    }
+    
+    //slider
+    #gallery-slide-box {
+        display: none;
+    }
+    
     #gallery-slide {
-        width: 70%;
+        width: 100%;
     }
     
     .carousel-inner {
@@ -345,6 +352,60 @@ section {
             background-position: center;
         }
     }
+    
+    //normal gallery
+    #desktop-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .gallery-photos-box {
+            display: inline-block;
+            height: 200px;
+            width: 300px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            
+            .gallery-photos {
+                height: 100%;
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+                transition: all .3s;
+
+                .photo-g-mask {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all .3s;
+
+                    i {
+                        font-size: 40px;
+                        color: transparent;
+                        transition: all .3s;
+                    }
+                }
+            }
+            
+            .gallery-photos:hover {
+                transform: scale(1.2);
+                cursor: pointer;
+                
+                .photo-g-mask {
+                    background-color: rgba(0, 63, 117, .5);
+                    
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
 #contact-section {
