@@ -169,12 +169,26 @@ header {
 }
 
 #section-divider-1 {
-    position: relative;
-    height: 300px;
-    overflow: hidden;
 
     #divider-pounds {
         background-image: url('../resources/Zaw%C3%B3lcze-3.jpg');
+        
+    }
+}
+
+#section-divider-2 {
+
+    #divider-pounds-second {
+        background-image: url('../resources/galeria/4.JPG');
+    }
+}
+
+.section-dividers {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    
+    .dividers {
         background-position: center;
         background-size: cover;
         height: 600px;
@@ -184,6 +198,7 @@ header {
         left: 0;
     }
 }
+
 
 section {
     position: relative;
@@ -213,13 +228,73 @@ section {
 #eco-fish-section {
     top: -120px;
     margin-bottom: -150px;
+    
+    #eco-logo {
+        position: absolute;
+        top: 120px;
+        right: 0;
+        height: 73px;
+        width: 100px;
+        background-image: url('../resources/EU_Organic_Logo_Colour_rgb.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+#processing-section {
+    height: 100vh;
+    
+    h3 {
+        margin: 0;
+    }
+    
+    #background-process-box {
+        height: calc(100% + 50px);
+        background-image: url('../resources/galeria/19.JPG');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: gray;
+        
+        #background-process-box-mask {
+            height: 100%;
+            background: linear-gradient(to right bottom, #fff, rgba(0, 63, 117, .8));
+        }
+    }
+    
+    .container {
+        height: inherit;
+        
+        .row {
+            height: inherit;
+            .col-lg {
+                height: inherit;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                
+                img {
+                    height: 40vh;
+                }
+                
+                p {
+                    width: 100%;
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
 #offer-section {
     padding-bottom: -100px;
 
     p:first-child {
-        font-weight: bold;
+//        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
     }
 
     .row {
@@ -229,6 +304,20 @@ section {
             h4 {
                 min-height: 60px;
                 font-weight: bold;
+            }
+            
+            ul {
+                list-style: none;
+                
+                li {
+                    text-transform: capitalize;
+                    padding: 5px;
+                    margin: 10px;
+                    background-color: #003f75;
+                    color: #fff;
+                    border-radius: 5px;
+                    text-align: center;
+                }
             }
         }
 
@@ -405,32 +494,15 @@ section {
             }
         }
     }
-    
 }
 
-#contact-section {
-    
-    .col-lg {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        p {
-            text-align: center;
-        }
-
-        p:first-child {
-            font-weight: bold;
-        }
-    }
-}
 
 #projects-section {
-
+    margin-bottom: 50px;
+    
     .certificates-box {
         width: 300px;
         height: 210px;
-//        border: 2px solid #003f75;
         margin-top: 50px;
         transition: all .3s;
         background-position: center;
@@ -512,7 +584,84 @@ section {
     }
 }
 
+#contact-section {
+    min-height: 100vh;
+    top: -130px;
+    
+    .container {
+        height: 100%;
+        
+        .row {
+            height: inherit;
+            .col-sm, .col-lg {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+
+                p {
+                    text-align: center;
+                }
+
+                p:first-child {
+                    font-weight: bold;
+                }
+
+            }
+            
+            .col-lg:last-child {
+                display: inline-block;
+                padding-bottom: 110px;
+
+                a {
+                    margin: 20px auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 50%;
+                    border: 3px solid #003f75;
+                    text-decoration: none;
+                    color: #003f75;
+                    font-size: 50px;
+                    transition: all .3s;
+                }
+
+                a:hover {
+                    background-color: #003f75;
+                    color: #fff;
+                }
+            }
+        }
+    
+        .row:last-child {
+            margin-top: 50px;
+        }
+    }
+    
+    #swan-on-background {
+        position: absolute;
+        height: 70%;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        right: 0;
+        background-image: url('../resources/swan.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    #contact-mask {
+        background: linear-gradient(to right bottom, rgba(256,256,256, .4), rgba(256,256,256, 1));
+    }
+}
+
 footer {
+    position: relative;
+    z-index: 2;
+    margin-top: -130px;
     background-color: #2C3E50;
     padding: 50px;
     -webkit-box-shadow: 0px -5px 40px 5px #000000;

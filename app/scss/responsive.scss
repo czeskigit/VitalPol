@@ -21,9 +21,14 @@
         }
         
         #logo-background {
-            top: 15vh;
-            right: 50%;
-            transform: translate(50%, -5vh);
+            top: 20vh;
+            right: 5%;
+            background-color: transparent;
+            
+            img {
+                top: 0;
+                left: 0;
+            }
         }
         
         #title-mask {

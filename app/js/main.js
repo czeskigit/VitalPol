@@ -6,8 +6,10 @@ $(document).ready(function(){
         var windowHeight = $(window).innerHeight();
         var scrollTopNumber = $(window).scrollTop();
         var dividerOneTopEdge = $('#section-divider-1')[0].offsetTop;
+        var dividerTwoTopEdge = $('#section-divider-2')[0].offsetTop;
         var windowBottomEdge = windowHeight + scrollTopNumber;
         var difference = windowBottomEdge - dividerOneTopEdge;
+        var differenceTwo = windowBottomEdge - dividerTwoTopEdge;
         
         if (scrollTopNumber >= windowHeight) {
             $('#main-nav').slideDown(300);
@@ -18,6 +20,11 @@ $(document).ready(function(){
         if (windowBottomEdge >= dividerOneTopEdge) {
             
             $('#divider-pounds').attr('style', 'bottom: -' + difference/3 + 'px');
+        }
+        
+        if (windowBottomEdge >= dividerTwoTopEdge) {
+            
+            $('#divider-pounds-second').attr('style', 'bottom: -' + differenceTwo/3 + 'px');
         }
         
     });
@@ -44,7 +51,7 @@ $(document).ready(function(){
     });
     
     $('.gallery-photos').on('click', function(){
-        $('#fish-photo-fixed img').attr('src', 'resources/galeria/' + $(this).attr('id') + '.jpg');
+        $('#fish-photo-fixed img').attr('src', 'resources/galeria/' + $(this).attr('id') + '.JPG');
         $('#fish-photo-fixed').fadeIn(300);
         
     });

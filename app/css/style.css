@@ -162,14 +162,21 @@ header #links div a:hover:after {
     width: 100%;
 }
 
-#section-divider-1 {
+#section-divider-1 #divider-pounds {
+    background-image: url("../resources/Zaw%C3%B3lcze-3.jpg");
+}
+
+#section-divider-2 #divider-pounds-second {
+    background-image: url("../resources/galeria/4.JPG");
+}
+
+.section-dividers {
     position: relative;
     height: 300px;
     overflow: hidden;
 }
 
-#section-divider-1 #divider-pounds {
-    background-image: url("../resources/Zaw%C3%B3lcze-3.jpg");
+.section-dividers .dividers {
     background-position: center;
     background-size: cover;
     height: 600px;
@@ -207,12 +214,72 @@ section h3 {
     margin-bottom: -150px;
 }
 
+#eco-fish-section #eco-logo {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    height: 73px;
+    width: 100px;
+    background-image: url("../resources/EU_Organic_Logo_Colour_rgb.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#processing-section {
+    height: 100vh;
+}
+
+#processing-section h3 {
+    margin: 0;
+}
+
+#processing-section #background-process-box {
+    height: calc(100% + 50px);
+    background-image: url("../resources/galeria/19.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: gray;
+}
+
+#processing-section #background-process-box #background-process-box-mask {
+    height: 100%;
+    background: linear-gradient(to right bottom, #fff, rgba(0, 63, 117, 0.8));
+}
+
+#processing-section .container {
+    height: inherit;
+}
+
+#processing-section .container .row {
+    height: inherit;
+}
+
+#processing-section .container .row .col-lg {
+    height: inherit;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#processing-section .container .row .col-lg img {
+    height: 40vh;
+}
+
+#processing-section .container .row .col-lg p {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
 #offer-section {
     padding-bottom: -100px;
 }
 
 #offer-section p:first-child {
-    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
 }
 
 #offer-section .row .col-sm {
@@ -222,6 +289,20 @@ section h3 {
 #offer-section .row .col-sm h4 {
     min-height: 60px;
     font-weight: bold;
+}
+
+#offer-section .row .col-sm ul {
+    list-style: none;
+}
+
+#offer-section .row .col-sm ul li {
+    text-transform: capitalize;
+    padding: 5px;
+    margin: 10px;
+    background-color: #003f75;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
 }
 
 #offer-section .row:last-child .col-sm {
@@ -387,18 +468,8 @@ section h3 {
     color: #fff;
 }
 
-#contact-section .col-lg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#contact-section .col-lg p {
-    text-align: center;
-}
-
-#contact-section .col-lg p:first-child {
-    font-weight: bold;
+#projects-section {
+    margin-bottom: 50px;
 }
 
 #projects-section .certificates-box {
@@ -483,7 +554,83 @@ section h3 {
     height: 80%;
 }
 
+#contact-section {
+    min-height: 100vh;
+    top: -130px;
+}
+
+#contact-section .container {
+    height: 100%;
+}
+
+#contact-section .container .row {
+    height: inherit;
+}
+
+#contact-section .container .row .col-sm, #contact-section .container .row .col-lg {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contact-section .container .row .col-sm p, #contact-section .container .row .col-lg p {
+    text-align: center;
+}
+
+#contact-section .container .row .col-sm p:first-child, #contact-section .container .row .col-lg p:first-child {
+    font-weight: bold;
+}
+
+#contact-section .container .row .col-lg:last-child {
+    display: inline-block;
+    padding-bottom: 110px;
+}
+
+#contact-section .container .row .col-lg:last-child a {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid #003f75;
+    text-decoration: none;
+    color: #003f75;
+    font-size: 50px;
+    transition: all .3s;
+}
+
+#contact-section .container .row .col-lg:last-child a:hover {
+    background-color: #003f75;
+    color: #fff;
+}
+
+#contact-section .container .row:last-child {
+    margin-top: 50px;
+}
+
+#contact-section #swan-on-background {
+    position: absolute;
+    height: 70%;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    right: 0;
+    background-image: url("../resources/swan.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#contact-section #contact-mask {
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), white);
+}
+
 footer {
+    position: relative;
+    z-index: 2;
+    margin-top: -130px;
     background-color: #2C3E50;
     padding: 50px;
     -webkit-box-shadow: 0px -5px 40px 5px #000000;
