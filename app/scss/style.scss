@@ -9,13 +9,17 @@ html {
 
 //Helpers
 .shadow {
-    -webkit-box-shadow: 0px 5px 40px 5px #000000;
-    box-shadow: 0px 5px 40px 5px #000000;
+    -webkit-box-shadow: 5px 5px 15px 0px #000000; 
+    box-shadow: 5px 5px 15px 0px #000000;
 }
 
 body {
     font-family: 'Nunito Sans', sans-serif;
     color: #000;
+}
+
+.eco-green {
+    color: rgb(169, 201, 56);
 }
 
 #main-nav {
@@ -26,10 +30,18 @@ body {
     -webkit-box-shadow: 0px 5px 40px 5px #000000;
     box-shadow: 0px 5px 40px 5px #000000;
 
-    img {
+    img:first-child {
         height: 60px;
+        transform: scale(1.4);
     }
 
+    #eu-eco-logo-nav {
+        height: 25px;
+        position: relative;
+        top: -10px;
+        left: 5px;
+    }
+    
     .underline:after {
         content: '';
         width: 0px;
@@ -44,8 +56,6 @@ body {
     .underline:hover:after {
         width: 100%;
     }
-
-
 
 }
 
@@ -117,6 +127,7 @@ header {
             color: #fff;
             text-decoration: none;
             transition: all .3s;
+            
         }
 
         a:hover {
@@ -163,7 +174,13 @@ header {
             a:hover:after {
                 width: 100%;
             }
-
+            
+            #eu-eco-logo-header {
+                height: 25px;
+                position: relative;
+                top: -10px;
+                left: 5px;
+            }
         }
     }
 }
@@ -171,7 +188,7 @@ header {
 #section-divider-1 {
 
     #divider-pounds {
-        background-image: url('../resources/Zaw%C3%B3lcze-3.jpg');
+        background-image: url('../resources/galeria/01.jpg');
         
     }
 }
@@ -179,7 +196,7 @@ header {
 #section-divider-2 {
 
     #divider-pounds-second {
-        background-image: url('../resources/galeria/4.JPG');
+        background-image: url('../resources/galeria/04.JPG');
     }
 }
 
@@ -238,6 +255,56 @@ section {
         background-image: url('../resources/EU_Organic_Logo_Colour_rgb.jpg');
         background-position: center;
         background-size: cover;
+    }
+    
+    .col-sm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        
+        .certificates-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 300px;
+            overflow: hidden;
+            
+            .certificate {
+                height: 100%;
+                width: 100%;
+                transition: all .3s;
+                
+                .cert-mask {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    width: 100%;
+                    transition: all .3s;
+                    
+                    i {
+                        color: #95A5A6;
+                        font-size: 50px;
+                        transition: all .3s;
+                    }
+                }
+            }
+            
+            .certificate:hover {
+                transform: scale(1.2);
+                cursor: pointer;
+                
+                .cert-mask {
+                    background-color: rgba(0, 63, 117, .8);
+                    
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -500,7 +567,7 @@ section {
 #projects-section {
     margin-bottom: 50px;
     
-    .certificates-box {
+    .projects-box {
         width: 300px;
         height: 210px;
         margin-top: 50px;
@@ -509,7 +576,7 @@ section {
         background-size: cover;
         overflow: hidden;
 
-        .cert-mask {
+        .proj-mask {
             height: 100%;
             width: 100%;
             transition: all .3s;
@@ -525,30 +592,30 @@ section {
         }
     }
     
-    #cert1 {
+    #proj1 {
         background-image: url('../resources/projects/tablica_di_bond_wymiar_A3_Iwona_Wieczorek.jpg');
     }
     
-    #cert2 {
+    #proj2 {
         background-image: url('../resources/projects/tablica_di_bond_wymiar_A3_Wieczorek_Iwona_wodsrod.jpg');
     }
     
-    #cert3 {
+    #proj3 {
         background-image: url('../resources/projects/tablica_dibond_wymiar_a3_Modernizacja_przetwornia.jpg');
     }
     
-    #cert4 {
+    #proj4 {
         background-image: url('../resources/projects/tablica_dibond_wymiar_a3_Modernizacja_wedkarskie.jpg')
     }
     
-    #cert5 {
+    #proj5 {
         background-image: url('../resources/projects/tablica_dibond_wymiar_a3_Modernizacja_zawolcze.jpg');
     }
 
-    .certificates-box:hover {
+    .projects-box:hover {
         cursor: pointer;
         
-        .cert-mask {
+        .proj-mask {
             background-color: rgba(0, 63, 117, .5);
             
             i {

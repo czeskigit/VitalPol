@@ -8,13 +8,17 @@ html {
 }
 
 .shadow {
-    -webkit-box-shadow: 0px 5px 40px 5px #000000;
-    box-shadow: 0px 5px 40px 5px #000000;
+    -webkit-box-shadow: 5px 5px 15px 0px #000000;
+    box-shadow: 5px 5px 15px 0px #000000;
 }
 
 body {
     font-family: 'Nunito Sans', sans-serif;
     color: #000;
+}
+
+.eco-green {
+    color: #a9c938;
 }
 
 #main-nav {
@@ -26,8 +30,16 @@ body {
     box-shadow: 0px 5px 40px 5px #000000;
 }
 
-#main-nav img {
+#main-nav img:first-child {
     height: 60px;
+    transform: scale(1.4);
+}
+
+#main-nav #eu-eco-logo-nav {
+    height: 25px;
+    position: relative;
+    top: -10px;
+    left: 5px;
 }
 
 #main-nav .underline:after {
@@ -162,12 +174,19 @@ header #links div a:hover:after {
     width: 100%;
 }
 
+header #links div #eu-eco-logo-header {
+    height: 25px;
+    position: relative;
+    top: -10px;
+    left: 5px;
+}
+
 #section-divider-1 #divider-pounds {
-    background-image: url("../resources/Zaw%C3%B3lcze-3.jpg");
+    background-image: url("../resources/galeria/01.jpg");
 }
 
 #section-divider-2 #divider-pounds-second {
-    background-image: url("../resources/galeria/4.JPG");
+    background-image: url("../resources/galeria/04.JPG");
 }
 
 .section-dividers {
@@ -223,6 +242,56 @@ section h3 {
     background-image: url("../resources/EU_Organic_Logo_Colour_rgb.jpg");
     background-position: center;
     background-size: cover;
+}
+
+#eco-fish-section .col-sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#eco-fish-section .col-sm .certificates-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+}
+
+#eco-fish-section .col-sm .certificates-box .certificate {
+    height: 100%;
+    width: 100%;
+    transition: all .3s;
+}
+
+#eco-fish-section .col-sm .certificates-box .certificate .cert-mask {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    transition: all .3s;
+}
+
+#eco-fish-section .col-sm .certificates-box .certificate .cert-mask i {
+    color: #95A5A6;
+    font-size: 50px;
+    transition: all .3s;
+}
+
+#eco-fish-section .col-sm .certificates-box .certificate:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#eco-fish-section .col-sm .certificates-box .certificate:hover .cert-mask {
+    background-color: rgba(0, 63, 117, 0.8);
+}
+
+#eco-fish-section .col-sm .certificates-box .certificate:hover .cert-mask i {
+    color: #fff;
 }
 
 #processing-section {
@@ -472,7 +541,7 @@ section h3 {
     margin-bottom: 50px;
 }
 
-#projects-section .certificates-box {
+#projects-section .projects-box {
     width: 300px;
     height: 210px;
     margin-top: 50px;
@@ -482,7 +551,7 @@ section h3 {
     overflow: hidden;
 }
 
-#projects-section .certificates-box .cert-mask {
+#projects-section .projects-box .proj-mask {
     height: 100%;
     width: 100%;
     transition: all .3s;
@@ -491,41 +560,41 @@ section h3 {
     justify-content: center;
 }
 
-#projects-section .certificates-box .cert-mask i {
+#projects-section .projects-box .proj-mask i {
     color: #95A5A6;
     font-size: 50px;
     transition: all .3s;
 }
 
-#projects-section #cert1 {
+#projects-section #proj1 {
     background-image: url("../resources/projects/tablica_di_bond_wymiar_A3_Iwona_Wieczorek.jpg");
 }
 
-#projects-section #cert2 {
+#projects-section #proj2 {
     background-image: url("../resources/projects/tablica_di_bond_wymiar_A3_Wieczorek_Iwona_wodsrod.jpg");
 }
 
-#projects-section #cert3 {
+#projects-section #proj3 {
     background-image: url("../resources/projects/tablica_dibond_wymiar_a3_Modernizacja_przetwornia.jpg");
 }
 
-#projects-section #cert4 {
+#projects-section #proj4 {
     background-image: url("../resources/projects/tablica_dibond_wymiar_a3_Modernizacja_wedkarskie.jpg");
 }
 
-#projects-section #cert5 {
+#projects-section #proj5 {
     background-image: url("../resources/projects/tablica_dibond_wymiar_a3_Modernizacja_zawolcze.jpg");
 }
 
-#projects-section .certificates-box:hover {
+#projects-section .projects-box:hover {
     cursor: pointer;
 }
 
-#projects-section .certificates-box:hover .cert-mask {
+#projects-section .projects-box:hover .proj-mask {
     background-color: rgba(0, 63, 117, 0.5);
 }
 
-#projects-section .certificates-box:hover .cert-mask i {
+#projects-section .projects-box:hover .proj-mask i {
     color: #fff;
     font-size: 100px;
 }

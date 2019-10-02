@@ -30,7 +30,12 @@ $(document).ready(function(){
     });
     
     //assignments
-    $('.certificates-box').on('click', function(){
+    $('.certificate').on('click', function(){
+        $('#certificate-fixed-container embed').attr('src', 'resources/' + $(this).attr('id') + '.pdf');
+        displayCertificate();
+    });
+    
+    $('.projects-box').on('click', function(){
         $('#certificate-fixed-container embed').attr('src', 'resources/' + $(this).attr('id') + '.pdf');
         displayCertificate();
     });
