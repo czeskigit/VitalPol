@@ -20,6 +20,7 @@ body {
 
 .eco-green {
     color: rgb(169, 201, 56);
+    text-transform: uppercase;
 }
 
 #main-nav {
@@ -271,6 +272,8 @@ section {
                 height: 100%;
                 width: 100%;
                 transition: all .3s;
+                background-position: center;
+                background-size: cover;
                 
                 .cert-mask {
                     display: flex;
@@ -286,6 +289,15 @@ section {
                         transition: all .3s;
                     }
                 }
+            }
+            
+            #cert1 {
+                background-image: url('../resources/dobre_praktyki.jpg');
+                background-position: top;
+            }
+            
+            #cert2 {
+                background-image: url('../resources/certyfikat_granat.jpg');
             }
             
             .certificate:hover {
@@ -648,14 +660,12 @@ section {
 }
 
 #contact-section {
-    min-height: 100vh;
     top: -130px;
     
     .container {
-        height: 100%;
         
         .row {
-            height: inherit;
+            
             .col-sm, .col-lg {
                 display: flex;
                 justify-content: center;
@@ -673,28 +683,35 @@ section {
             }
             
             .col-lg:last-child {
-                display: inline-block;
                 padding-bottom: 110px;
-
-                a {
-                    margin: 20px auto;
+                
+                #media-box {
+                    width: 70%;
                     display: flex;
-                    align-items: center;
+                    flex-wrap: wrap;
                     justify-content: center;
-                    height: 100px;
-                    width: 100px;
-                    border-radius: 50%;
-                    border: 3px solid #003f75;
-                    text-decoration: none;
-                    color: #003f75;
-                    font-size: 50px;
-                    transition: all .3s;
-                }
+                    
+                    a {
+                        margin: 20px auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 50%;
+                        border: 3px solid #003f75;
+                        text-decoration: none;
+                        color: #003f75;
+                        font-size: 50px;
+                        transition: all .3s;
+                    }
 
-                a:hover {
-                    background-color: #003f75;
-                    color: #fff;
+                    a:hover {
+                        background-color: #003f75;
+                        color: #fff;
+                    }
                 }
+                
             }
         }
     
@@ -718,6 +735,7 @@ section {
     
     #contact-mask {
         background: linear-gradient(to right bottom, rgba(256,256,256, .4), rgba(256,256,256, 1));
+        height: 100%;
     }
 }
 

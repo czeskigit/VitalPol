@@ -19,6 +19,7 @@ body {
 
 .eco-green {
     color: #a9c938;
+    text-transform: uppercase;
 }
 
 #main-nav {
@@ -260,6 +261,8 @@ section h3 {
     height: 100%;
     width: 100%;
     transition: all .3s;
+    background-position: center;
+    background-size: cover;
 }
 
 #eco-fish-section .col-sm .certificates-box .certificate .cert-mask {
@@ -275,6 +278,15 @@ section h3 {
     color: #95A5A6;
     font-size: 50px;
     transition: all .3s;
+}
+
+#eco-fish-section .col-sm .certificates-box #cert1 {
+    background-image: url("../resources/dobre_praktyki.jpg");
+    background-position: top;
+}
+
+#eco-fish-section .col-sm .certificates-box #cert2 {
+    background-image: url("../resources/certyfikat_granat.jpg");
 }
 
 #eco-fish-section .col-sm .certificates-box .certificate:hover {
@@ -620,16 +632,7 @@ section h3 {
 }
 
 #contact-section {
-    min-height: 100vh;
     top: -130px;
-}
-
-#contact-section .container {
-    height: 100%;
-}
-
-#contact-section .container .row {
-    height: inherit;
 }
 
 #contact-section .container .row .col-sm, #contact-section .container .row .col-lg {
@@ -647,11 +650,17 @@ section h3 {
 }
 
 #contact-section .container .row .col-lg:last-child {
-    display: inline-block;
     padding-bottom: 110px;
 }
 
-#contact-section .container .row .col-lg:last-child a {
+#contact-section .container .row .col-lg:last-child #media-box {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contact-section .container .row .col-lg:last-child #media-box a {
     margin: 20px auto;
     display: flex;
     align-items: center;
@@ -666,7 +675,7 @@ section h3 {
     transition: all .3s;
 }
 
-#contact-section .container .row .col-lg:last-child a:hover {
+#contact-section .container .row .col-lg:last-child #media-box a:hover {
     background-color: #003f75;
     color: #fff;
 }
@@ -690,6 +699,7 @@ section h3 {
 
 #contact-section #contact-mask {
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), white);
+    height: 100%;
 }
 
 footer {
