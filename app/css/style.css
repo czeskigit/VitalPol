@@ -712,7 +712,34 @@ footer {
     box-shadow: 0px -5px 40px 5px #000000;
 }
 
-footer p {
-    text-align: center;
+footer .col-sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+footer .col-sm img {
+    height: 100px;
+}
+
+footer .col-sm p {
     color: #fff;
+}
+
+footer .col-sm #authors p {
+    font-size: 10px;
+    text-align: center;
+    color: #808B96;
+}
+
+footer .col-sm #authors p a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s;
+}
+
+footer .col-sm #authors p a:hover {
+    color: #3498DB;
 }
