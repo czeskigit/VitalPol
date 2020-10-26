@@ -1,74 +1,66 @@
 @media only screen and (max-width: 992px) {
-    header {
-        background-image: url("../resources/galeria/03.JPG");
-        background-position: center;
-        background-size: cover;
-    }
-
-    header #header-mask {
-        display: none;
-    }
-
-    header #HeroVideo {
-        display: none;
-    }
-
-    header #links div {
-        width: 100%;
-    }
-
-    header #logo-background {
-        top: 20vh;
-        right: 5%;
-        background-color: transparent;
-    }
-
-    header #logo-background img {
-        top: 0;
-        left: 0;
-    }
-
-    header #title-mask h1 {
-        font-size: 40px;
-    }
-
-    header #title-mask a {
-        font-size: 40px;
-    }
-
-    #gallery-section #gallery-slide-box {
-        display: inherit;
-    }
-
-    #gallery-section #desktop-gallery {
-        display: none;
-    }
+  header {
+    background-image: url("../resources/galeria/03.JPG");
+    background-position: center;
+    background-size: cover;
+  }
+  header #header-mask {
+    display: none;
+  }
+  header #HeroVideo {
+    display: none;
+  }
+  header #links div {
+    width: 100%;
+  }
+  header #logo-background {
+    top: 20vh;
+    right: 5%;
+    background-color: transparent;
+  }
+  header #logo-background img {
+    top: 0;
+    left: 0;
+  }
+  header #title-mask h1 {
+    font-size: 40px;
+  }
+  header #title-mask a {
+    font-size: 40px;
+  }
+  #gallery-section #gallery-slide-box {
+    display: inherit;
+  }
+  #gallery-section #desktop-gallery {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    header #links {
-        display: none;
-    }
-
-    header #logo-background {
-        top: 0;
-        right: 50%;
-        transform: translate(50%, 10%);
-    }
-
-    header #title-mask {
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        bottom: -60vh;
-        width: 100%;
-        margin: 0;
-        height: 50%;
-    }
-
-    header #title-mask h1 {
-        font-size: 30px;
-        text-align: center;
-        width: 100%;
-    }
+  header #links {
+    display: none;
+  }
+  header #logo-background {
+    top: 0;
+    right: 50%;
+    transform: translate(50%, 10%);
+  }
+  header #title-mask {
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    bottom: -60vh;
+    width: 100%;
+    margin: 0;
+    height: 50%;
+  }
+  header #title-mask h1 {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  #fish-photo-fixed img {
+    height: auto;
+    width: 90%;
+  }
 }
