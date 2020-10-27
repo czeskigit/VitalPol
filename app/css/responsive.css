@@ -28,11 +28,24 @@
   header #title-mask a {
     font-size: 40px;
   }
+  #offer-section .row .col-sm:last-child .offer-divider {
+    display: inline-block;
+    border-top: 2px solid grey;
+    width: 100%;
+  }
   #gallery-section #gallery-slide-box {
     display: inherit;
   }
   #gallery-section #desktop-gallery {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #offer-section .row .col-sm .offer-divider {
+    display: inline-block;
+    border-top: 2px solid grey;
+    width: 100%;
   }
 }
 

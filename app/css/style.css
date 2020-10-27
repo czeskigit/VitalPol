@@ -331,19 +331,26 @@ section h3 {
 }
 
 #offer-section .row .col-sm {
-  padding: 50px;
+  padding: 10px;
   margin-top: 0;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 700px;
 }
 
 #offer-section .row .col-sm h4 {
-  min-height: 60px;
+  height: 50px;
   font-weight: bold;
+  text-align: center;
 }
 
 #offer-section .row .col-sm ul {
   list-style: none;
   width: 250px;
+  height: 300px;
 }
 
 #offer-section .row .col-sm ul li {
@@ -356,16 +363,15 @@ section h3 {
   text-align: center;
 }
 
-#offer-section .row:last-child .col-sm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
+#offer-section .row .col-sm .offer-divider {
+  display: none;
+  height: 0;
+  width: 0;
 }
 
 #offer-section .fish-photo {
-  width: calc(100% - 50px);
-  height: 250px;
+  width: 300px;
+  height: 200px;
   overflow: hidden;
 }
 
